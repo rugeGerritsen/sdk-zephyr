@@ -311,7 +311,7 @@ static int cmd_ecred_reconfigure(const struct shell *sh, size_t argc, char *argv
 
 static int cmd_ecred_connect(const struct shell *sh, size_t argc, char *argv[])
 {
-	struct bt_l2cap_chan *l2cap_ecred_chans[1] = {&l2ch_chan.ch.chan};
+	struct bt_l2cap_chan *l2cap_ecred_chans[] = {&l2ch_chan.ch.chan, NULL};
 	uint16_t psm;
 	int err = 0;
 
