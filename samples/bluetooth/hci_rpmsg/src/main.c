@@ -30,7 +30,7 @@
 
 #include <zephyr/logging/log.h>
 
-LOG_MODULE_REGISTER(hci_rpmsg, CONFIG_BT_LOG_LEVEL);
+LOG_MODULE_REGISTER(hci_rpmsg, 0);
 
 static struct ipc_ept hci_ept;
 
